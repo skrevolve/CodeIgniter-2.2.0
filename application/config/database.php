@@ -52,7 +52,7 @@ $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
 $db['default']['database'] = 'test';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
@@ -64,6 +64,20 @@ $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
 
-
+$db['slave']['hostname'] = 'localhost';
+$db['slave']['username'] = 'root';
+$db['slave']['password'] = '';
+$db['slave']['database'] = 'slave';
+$db['slave']['dbdriver'] = 'mysqli';
+$db['slave']['dbprefix'] = '';
+$db['slave']['pconnect'] = TRUE;
+$db['slave']['db_debug'] = TRUE;
+$db['slave']['cache_on'] = FALSE;
+$db['slave']['cachedir'] = '';
+$db['slave']['char_set'] = 'utf8';
+$db['slave']['dbcollat'] = 'utf8_general_ci';
+$db['slave']['swap_pre'] = '';
+$db['slave']['autoinit'] = TRUE;
+$db['slave']['stricton'] = FALSE;
 /* End of file database.php */
 /* Location: ./application/config/database.php */

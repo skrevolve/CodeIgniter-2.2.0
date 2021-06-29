@@ -34,6 +34,8 @@ class CI_Model {
 	function __construct()
 	{
 		log_message('debug', "Model Class Initialized");
+		$this->db = $this->load->database('default', TRUE); //데이터베이스1
+		$this->db2 = $this->load->database('slave', TRUE); //데이터베이스2
 	}
 
 	/**
