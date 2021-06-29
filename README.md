@@ -1,4 +1,4 @@
-# 회사 레거시 코드를 이해하기 위한 테스트
+# 회사 레거시 코드를 이해하기 위한 테스트 코드
 # CodeIgniter 2.2.0
 Open Source PHP Framework (originally from EllisLab)
 
