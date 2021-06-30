@@ -45,7 +45,8 @@ index.php가 위치하며 CI에서 경로를 필요로하는 동작(파일등)�
 - views : MVC중 뷰 파일
 
 ### system
-- core : 기본적으로 수정하지 않는것을 원칙으로 하나 커스터마이징시 수정이 불가피한 경우가 있다.
+- core : 시스템 핵심 정보 (기본적으로 수정하지 않는것을 원칙으로 하나 커스터마이징시 수정이 불가피한 경우가 있다)
+- database : DB 레퍼런스 정보 (http://www.ciboard.co.kr/user_guide/kr/database/index.html)
 ### user_guide
 
 사용자 가이드 파일
