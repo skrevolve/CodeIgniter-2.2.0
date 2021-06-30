@@ -13,7 +13,9 @@ Please update your installation to the latest CodeIgniter 3.x version available
 # Directory structure
 최상위 디렉토리(예제에서는 ci) : index.php가 위치하며 CI에서 경로를 필요로하는 동작(파일등)에서 기준이 되는 디렉토리입니다.
 
-### application : 사용자가 작성하는 소스(MVC)와 여러가지 환경 설정 파일들이 저장되는 최상위 디렉토리 입니다.
+### application
+
+사용자가 작성하는 소스(MVC)와 여러가지 환경 설정 파일들이 저장되는 최상위 디렉토리 입니다.
 
 - cache : 캐쉬파일
 
@@ -41,5 +43,8 @@ Please update your installation to the latest CodeIgniter 3.x version available
 
 - views : MVC중 뷰 파일
 
-### system : CI의 core파일(기본적으로 수정하지 않는것을 원칙으로 하나 커스터마이징시 수정이 불가피한 경우가 있다.)  
-### user_guide : 사용자 가이드 파일
+### system
+CI의 core파일(기본적으로 수정하지 않는것을 원칙으로 하나 커스터마이징시 수정이 불가피한 경우가 있다.)  
+
+### user_guide
+사용자 가이드 파일
