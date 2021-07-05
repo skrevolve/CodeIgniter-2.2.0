@@ -35,8 +35,8 @@ class CI_Model {
 	{
 		log_message('debug', "Model Class Initialized");
 		
-		$this->db = $this->load->database('default', TRUE);
-		$this->db2 = $this->load->database('slave', TRUE);
+		// $this->db = $this->load->database('default', TRUE);
+		// $this->db2 = $this->load->database('slave', TRUE);
 	}
 
 	/**
