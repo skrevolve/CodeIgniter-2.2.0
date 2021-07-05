@@ -1,20 +1,22 @@
 <?php
 class News_model extends CI_Model {
 
-    function __construct() {
+    protected $table = 'news';
+
+    public function __construct() {
         parent::__construct();
     }
 
-    function get_news($slug = FALSE) {
+    public function get_news($slug = FALSE) {
         if ($slug === FALSE) {
-            $query = $this->db->get('news');
+            $query = $this->db->get($this->table);
             return $query->result_array();
         }
-        $query = $this->db->get_where('news', array('slug' => $slug));
+        $query = $this->db->get_where($this->table, array('slug' => $slug));
         return $query->row_array();
     }
     
-    function set_news() {
+    public function set_news() {
         $this->load->helper('url');
 
         $slug = url_title($this->input->post('title'), 'dash', TRUE);
@@ -25,6 +27,6 @@ class News_model extends CI_Model {
             'text' => $this->input->post('text')
         );
 
-        return $this->db->insert('news',$data);
+        return $this->db->insert($this->table, $data);
     }
 }
